@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "searchCloth";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>sCar</title>
+</head>
+<body>
+    <div id="sc">
+        <form method="post" action="/Home/sCloth">
+        <table>
+            <tr>
+                <td>
+                    ID of the ad:
+                </td>
+                <td>
+                    <input type="text" id="id" name="id" />
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    Title of the ad:
+                </td>
+                <td>
+                    <input type="text" id="t" name="title" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="Search" id="submit" />
+                </td>
+            </tr>
+        </table>
+            </form>
+    </div>
+   
+</body>
+</html>

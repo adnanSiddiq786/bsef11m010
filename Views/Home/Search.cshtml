@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="s">
+
+</div>
+<script>
+    $.getJSON("/Home/search", function (data) {
+        $.each(data, function (i, item) {
+            $("#s").add(item.Id  + item.Name );
+        });
+    });
+</script>

@@ -1,0 +1,251 @@
+﻿@{
+    ViewBag.Title = "PostAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Post Your ad by Selecting catagory </h2><br /> <br />
+  <link href="bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.8.2.js">
+</script>
+ <script src="bootstrap.js" ></script>
+
+
+<div id="bol" class="row">
+    <aside>
+    <div id="ucar" >
+        <input type="button" value="UpDate Vihicle's Data        " id="ur" />
+    </div>
+     <div id="uclo" >
+        <input type="button" value=" UpDate Clothe's Data       " id="ul" />
+    </div>
+     <div id="ucel" >
+        <input type="button" value="  UpDate Phone's Data       " id="uph" />
+    </div>
+     <div id="ubk" >
+        <input type="button" value="  UpDate Book's Data         " id="ub" />
+    </div>
+     <div id="ue" >
+        <input type="button" value="UpDate Electronics's Data " id="uel" />
+    </div>
+</aside>
+   
+    <div class="col-lg-3">
+        <aside>
+    <div id="dcar" >
+        <input type="button" value="Delete Vihicle's Data         " id="dr" />
+    </div>
+     <div id="dclo" >
+        <input type="button" value=" Delete Clothe's Data        " id="dl" />
+    </div>
+     <div id="dcel" >
+        <input type="button" value="  Delete Phone's Data        " id="dph" />
+    </div>
+     <div id="dbk" >
+        <input type="button" value="  Delete Book's Data          " id="db" />
+    </div>
+     <div id="de" >
+        <input type="button" value="       Electronics's Data " id="del" />
+    </div>
+</aside>
+   
+    
+    <input type="button" value="             Vihicles                   " id="car" />
+  
+<div id="book">
+   
+      <input type="button" value="    Books and Magazines     " id="bk" name="bk" />
+</div>
+          
+<div id="elect">
+  
+     <input type="button" value="             Electronics              " id="elec" />
+          
+</div>
+</div>
+              
+<div id="cell">
+    <input type="button" value="Cell Phones & Accessories " id="cl" />
+           
+</div>
+<div id="cloth">
+    
+     <input type="button" value="             Clothes                    " id="clo" />
+         
+</div>
+    </div>
+
+<script>
+    
+    $("#car").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#ur").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#cl").hide();
+        $("#bol").load("/Home/adCar");
+    });
+    $("#bk").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#ur").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#car").hide();
+        $("#cl").hide();
+        $("#book").load("/Home/adBook");
+    
+    });
+    $("#elec").click(function () {
+        $("#clo").hide();
+        $("#car").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#ur").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#cl").hide();
+        $("#elect").load("/Home/adElectro");
+    });
+    $("#clo").click(function () {
+        $("#car").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#ur").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#cl").hide();
+        $("#cloth").load("/Home/adCloth");
+    });
+    $("#cl").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#ur").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#car").hide();
+        $("#cell").load("/Home/adCell");
+    });
+    $("#ur").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#cl").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#car").hide();
+        $("#book").load("/Home/searchCar");
+    });
+    $("#ub").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#cl").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#car").hide();
+        $("#book").load("/Home/searchBook");
+    });
+    $("#uel").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#cl").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#car").hide();
+        $("#book").load("/Home/searchElectronic");
+    });
+    $("#ul").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#cl").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#car").hide();
+        $("#book").load("/Home/searchCloth");
+    });
+    $("#uph").click(function () {
+        $("#clo").hide();
+        $("#elec").hide();
+        $("#del").hide();
+        $("#db").hide();
+        $("#dph").hide();
+        $("#dr").hide();
+        $("#cl").hide();
+        $("#uph").hide();
+        $("#ub").hide();
+        $("#uel").hide();
+        $("#ul").hide();
+        $("#dl").hide();
+        $("#bk").hide();
+        $("#car").hide();
+        $("#book").load("/Home/searchCell");
+    });
+
+      
+</script>

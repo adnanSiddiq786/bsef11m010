@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "adCloth";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+     <link href="bootstrap.css" rel="stylesheet" />
+    <script src="bootstrap.js" ></script>
+</head>
+<body>
+   
+    <div class="row">
+       <form action ="/Home/saveCloth" enctype="multipart/form-data" method="post">
+        <div class="col-lg-2 list-group ">
+            <h1>Post Your Ad Here  :) </h1>
+           <table>
+               <tr>
+                   <td>
+                       Ad Title :
+                   </td>
+                   <td>
+<input type="text"  placeholder="title that discribe your ad" name="title" />
+
+                   </td>
+               </tr>
+           
+               <tr>
+                    <td>
+                       type:
+                   </td>
+                   <td>
+  <input type="text" placeholder="for men,women etc  " name="type"/> 
+
+                   </td>
+               </tr>
+          
+                <tr>
+                    <td>
+                    price:
+                   </td>
+                   <td>
+  <input type="text" placeholder="price in PAK rupees" name="price" />
+
+                   </td>
+               </tr>
+              
+            
+                 <tr>
+                    <td>
+                        
+               Name of  item: 
+                   </td>
+                   <td>
+       
+           <input type="text" placeholder="name of item"  name="name"/> 
+                   </td>
+               </tr>
+         
+               <tr>
+                   <td>
+                       <h2>Seller Info,</h2><br />
+                   </td>
+               </tr>
+                <tr>
+                    <td>
+                        
+               Name of seller: 
+                   </td>
+                   <td>
+       
+           <input type="text" placeholder="name of seller"  name="sname"/> 
+                   </td>
+               </tr>
+                <tr>
+                    <td>
+               Email : 
+                   </td>
+                   <td>
+       
+           <input type="email" placeholder="Example@ahhoo.com"  name="email"/> 
+                   </td>
+               </tr>
+                <tr>
+                    <td>
+             Phone Number : 
+                   </td>
+                   <td>
+       
+           <input type="tel" placeholder="your cell number"  name="num"/> 
+                   </td>
+               </tr>
+                     <tr>
+                    <td>
+                     City: 
+                   </td>
+                   <td>
+ <input type="text"  placeholder="your current city"  name ="city"/> 
+
+                   </td>
+                   
+               </tr>
+             
+                <tr>
+                    <td>
+            Image of Cloth : 
+                   </td>
+                   <td>
+       
+           <input type="file"  name="img"/> 
+                   </td>
+               </tr>
+           </table>
+            <input type="submit" value="Post this Ad" />
+            </div>
+           </form>
+       
+        </div>
+    
+   
+</body>
+</html>

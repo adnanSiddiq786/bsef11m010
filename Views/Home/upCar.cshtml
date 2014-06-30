@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "upCar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model  newApp.Models.car
+<div class="row">
+        <form action="/Home/updateCar" enctype="multipart/form-data" method="post">
+            <div class="col-lg-2 list-group ">
+                <h1>Update Your Post Here  :) </h1>
+                <table>
+                      <tr>
+                        <td>Ad ID : 
+                        </td>
+                        <td>
+                         
+
+                            <input type="text"  placeholder="same as searched"  name="id"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ad Title : 
+                        </td>
+                        <td>
+                         
+
+                            <input type="text"    name="title"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Make :
+                        </td>
+                        <td>
+                            <input type="text"   name="make" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Model:
+                        </td>
+                        <td>
+                            <input type="text"   name="model"/>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>type:
+                        </td>
+                        <td>
+                            <input type="text" name="type"/>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>price:
+                        </td>
+                        <td>
+                            <input type="text"  name="price" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Year :  
+                        </td>
+                        <td>
+
+                            <input type="text"  name="year"  />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Milage : 
+                        </td>
+                        <td>
+
+                            <input type="text"   name="milage"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Condition : 
+                        </td>
+                        <td>
+
+                            <input type="text"   name="cond"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>VIN Number  : 
+                        </td>
+                        <td>
+
+                            <input type="text"   name="vin"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Image of Car : 
+                        </td>
+                        <td>
+
+                          
+                            <input type="file" name="img" />
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Seller Info,</h2>
+                            <br />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email : 
+                        </td>
+                        <td>
+
+                            <input type="email" 
+                                  name="email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City: 
+                        </td>
+                        <td>
+                            <input type="text"  name="city"/>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Phone Number : 
+                        </td>
+                        <td>
+
+                            <input type="tel"   name="num"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name of seller: 
+                        </td>
+                        <td>
+
+                            <input type="text"   name="sname"/>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Post this Ad" />
+            </div>
+        </form>
+
+    </div>
